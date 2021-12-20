@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    font-size: 65.5%;
+}
+
+
+/* MENU MOBILE STYLE START */
+
+.menuMobileContainer{
+    position: absolute;
+    z-index: 1000;
+    width: 70%;
+    height: 100vh;
+    background: hsl(0, 0%, 7%);
+    padding: 25px;
+    display: none;
+}
+
+.menuMobileContainerActive{
+    animation: animateMenuOpen 0.5s linear;
+    display: block;
+}
+
+@keyframes animateMenuOpen {
+    0%{
+        left: -100%;
+    }
+    50%{
+        left: -50%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+.menuMobileContainer p{
+    font-size: 2.3em;
+    font-weight: 800;
+    color: hsl(0, 0%, 100%);
+}
+
+.menuMobileContainer .menu ul{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 35px;
+    flex-direction: column;
+    transform: translateY(50%);
+}
+
+.menuMobileContainer .menu ul li{
+    font-weight: 600;
+    font-size: 1.35em;
+}
+
+.menuMobileContainer .menu ul li a{
+    color: hsl(0, 0%, 100%);
+}
+
+/* MENU MOBILE STYLE END */
+
+
+
+.firstPage{
+    background: url('https://wallpaper.dog/large/20480664.jpg') no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+/* header style start */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.logoTitle{
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 0.8;
+    color: hsl(0, 0%, 100%);
+}
+
+.logoTitle span{
+    font-size: 0.5em;
+}
+
+.iconMenu{
+    font-size: 3em;
+    color: hsl(0, 0%, 100%);
+}
+
+/* header style end */
+
+/* main style start */
+
+.main{
+    width: 100%;
+    height: calc(100vh - 90px);
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main .fraseMain{
+    font-size: 3.2em;
+    font-size: 800;
+    color: hsl(0, 0%, 100%);
+    transform: translateY(-50%);
+}
+
+.redesContainer{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.redesContainer .redesIcon{
+    font-size: 2.1em;
+    color: hsl(0, 0%, 100%);
+}
+
+.arrow{
+    color: hsl(0, 0%, 100%);
+    font-size: 3em;
+    position: absolute;
+    right: 30px; bottom: 30px;
+}
+
+/* main style end */
+
